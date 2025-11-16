@@ -166,7 +166,7 @@ export default function DocumentsPage() {
                         </button>
 
                         <a
-                          href={d.file_url}
+                          href={`https://docs.google.com/gview?url=${encodeURIComponent(d.file_url)}&embedded=true`}
                           target="_blank"
                           rel="noreferrer"
                           className="text-gray-400 hover:text-white flex items-center gap-2"
